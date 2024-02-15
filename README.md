@@ -27,8 +27,8 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/recipe-page-flexbox-scss-media-query-MLlmkc0CKF](https://www.frontendmentor.io/solutions/recipe-page-flexbox-scss-media-query-MLlmkc0CKF)
-- Live Site URL: [https://fm-recipe-page-eight.vercel.app](https://fm-recipe-page-eight.vercel.app)
+- Solution URL: [https://www.frontendmentor.io/solutions/social-links-profile-media-query-g2n_tEEE3p](https://www.frontendmentor.io/solutions/social-links-profile-media-query-g2n_tEEE3p)
+- Live Site URL: [https://fm-social-link-profile.vercel.app](https://fm-social-link-profile.vercel.app)
 
 ## My process
 
