@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: hsl(0, 0%, 8%);
+  font-size: 14px;
+}
+
+body {
+  margin: 7.5em 1.5em;
+  color: hsl(0, 0%, 100%);
+  max-width: 375px;
+  font-family: "Inter", sans-serif;
+}
+@media (min-width: 376px) {
+  body {
+    margin: 7.5rem auto;
+  }
+}
+
+section {
+  padding: 1.5em;
+  border-radius: 1em;
+  background-color: hsl(0, 0%, 12%);
+  text-align: center;
+}
+section .profile {
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  margin-bottom: 2em;
+}
+section h1 {
+  margin-bottom: 0.5em;
+}
+section .country {
+  color: hsl(75, 94%, 57%);
+  font-weight: bold;
+  margin-bottom: 2em;
+}
+section .bio {
+  margin-bottom: 1.5em;
+}
+section .social {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+section .social button {
+  all: unset;
+  padding: 1em;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0.5em;
+  background-color: hsl(0, 0%, 20%);
+  transition: all 0.3s ease-in-out;
+}
+section .social button:hover {
+  color: hsl(0, 0%, 12%);
+  background-color: hsl(75, 94%, 57%);
+}
+@media (min-width: 376px) {
+  section {
+    padding: 2.5em;
+  }
+}/*# sourceMappingURL=style.css.map */

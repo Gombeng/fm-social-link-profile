@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+$Mobile: 375px;
+
+$Green: hsl(75, 94%, 57%);
+$White: hsl(0, 0%, 100%);
+$Grey: hsl(0, 0%, 20%);
+$Dark-Grey: hsl(0, 0%, 12%);
+$Off-Black: hsl(0, 0%, 8%);
+
+@mixin mediaQuery($breakpoint) {
+  @if ($breakpoint == minMobile) {
+    @media (min-width: ($Mobile + 1)) {
+      @content;
+    }
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: $Off-Black;
+  font-size: 14px;
+}
+
+body {
+  margin: 7.5em 1.5em;
+  color: $White;
+  max-width: $Mobile;
+  font-family: "Inter", sans-serif;
+
+  @include mediaQuery(minMobile) {
+    margin: 7.5rem auto;
+  }
+}
+
+section {
+  padding: 1.5em;
+  border-radius: 1em;
+  background-color: $Dark-Grey;
+  text-align: center;
+
+  .profile {
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    margin-bottom: 2em;
+  }
+
+  h1 {
+    margin-bottom: 0.5em;
+  }
+
+  .country {
+    color: $Green;
+    font-weight: bold;
+    margin-bottom: 2em;
+  }
+
+  .bio {
+    margin-bottom: 1.5em;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    button {
+      all: unset;
+      padding: 1em;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 0.5em;
+      background-color: $Grey;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: $Dark-Grey;
+        background-color: $Green;
+      }
+    }
+  }
+
+  @include mediaQuery(minMobile) {
+    padding: 2.5em;
+  }
+}
